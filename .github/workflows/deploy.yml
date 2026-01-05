@@ -1,42 +1,53 @@
-name: Build and Deploy
+name: Build and Deploy (GitHub Pages)
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
+  workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 1"
+    - cron: "0 12 * * 1" # every Monday 12:00 UTC (optional)
 
 permissions:
   contents: write
 
 env:
   CI: false
+  USE_GITHUB_DATA: "true"
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.PORTFOLIO_SECRET_TOKEN }}
-  USE_GITHUB_DATA: "true"
-  # MEDIUM_USERNAME: "your_medium_username"  # optional
+  # MEDIUM_USERNAME: ${{ secrets.MEDIUM_USERNAME }} # optional (only if you use Medium)
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: "npm"
 
-      - name: Install and Build
+      - name: Install
+        run: npm ci
+
+      # Optional: helps you see what branch + env are being used (no secrets printed)
+      - name: Debug info
         run: |
-          npm ci
-          npm run build
+          echo "Branch: $GITHUB_REF"
+          echo "User: $GITHUB_USERNAME"
+          node -v
+          npm -v
 
-      - name: Deploy
+      - name: Build (runs fetch.js via your npm script)
+        run: npm run build
+
+      - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: build
+          clean: true
