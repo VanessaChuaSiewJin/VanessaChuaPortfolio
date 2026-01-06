@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/VanessaChuaPortfolio/static/css/main.d4fb6a25.css",
-    "main.js": "/VanessaChuaPortfolio/static/js/main.be6d10bf.js",
-    "static/css/64.bba8fa55.chunk.css": "/VanessaChuaPortfolio/static/css/64.bba8fa55.chunk.css",
+    "main.css": "/VanessaChuaPortfolio/static/css/main.aff99eed.css",
+    "main.js": "/VanessaChuaPortfolio/static/js/main.1177a343.js",
+    "static/css/64.9675e21c.chunk.css": "/VanessaChuaPortfolio/static/css/64.9675e21c.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/VanessaChuaPortfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/VanessaChuaPortfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/VanessaChuaPortfolio/static/js/769.bda0d7b7.chunk.js",
@@ -24,15 +24,15 @@
     "static/media/nextuLogo.webp": "/VanessaChuaPortfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/VanessaChuaPortfolio/index.html",
     "static/media/talksCardBack.svg": "/VanessaChuaPortfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.d4fb6a25.css.map": "/VanessaChuaPortfolio/static/css/main.d4fb6a25.css.map",
-    "main.be6d10bf.js.map": "/VanessaChuaPortfolio/static/js/main.be6d10bf.js.map",
-    "64.bba8fa55.chunk.css.map": "/VanessaChuaPortfolio/static/css/64.bba8fa55.chunk.css.map",
+    "main.aff99eed.css.map": "/VanessaChuaPortfolio/static/css/main.aff99eed.css.map",
+    "main.1177a343.js.map": "/VanessaChuaPortfolio/static/js/main.1177a343.js.map",
+    "64.9675e21c.chunk.css.map": "/VanessaChuaPortfolio/static/css/64.9675e21c.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/VanessaChuaPortfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/VanessaChuaPortfolio/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/VanessaChuaPortfolio/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4fb6a25.css",
-    "static/js/main.be6d10bf.js"
+    "static/css/main.aff99eed.css",
+    "static/js/main.1177a343.js"
   ]
 }
