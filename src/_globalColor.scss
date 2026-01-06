@@ -1,83 +1,122 @@
-/* Change colors in this file to style to your needs on a global level. 
-Certain colors are used for different and multiply types of elements. 
-For greater control over colors visit each components .scss file. */
+/* Lilac palette global theme */
 
-// button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
-$topButtonHover: #000;
+/* =========================
+   Core brand colors
+   ========================= */
 
-// text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
+// Primary lilac (main action color)
+$buttonColor: #85729f; // lilac
+$buttonHover: #a293b8; // lighter lilac
+$topButtonHover: #402454; // deep purple
+
+// Links / accents
+$appLink: #5e9aa4; // teal accent
+$skillsColor: #85729f; // lilac
+
+/* =========================
+   Text colors (light theme)
+   ========================= */
+
+$titleColor: #402454; // deep purple for headings
+$textColor: #262626; // readable dark grey
+$subTitle: #617080; // muted blue-grey
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+$blogCardTitleColor: #402454;
 
-// text color dark theme
-$textColorDark: #ffffff;
+/* =========================
+   Text colors (dark theme)
+   ========================= */
 
-// toggle switch colors
-$toggleCheck: #2196f3;
-$toggleSwitchSliderBG: #ccc;
+$textColorDark: #f7eeef; // soft near-white (pinkish off-white)
 
-// githubRepo specific colors
-$githubRepoCardLanguageColorBG: #0000ff;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+/* =========================
+   Toggle switch
+   ========================= */
 
-// light background colors
-$lightBackground1: #85729f;
-$lightBackground2: #a293b8;
-$lightBackground3: #d7ccd8;
-$blogCardContainerColor: #402454;
-// dark background colors
-$darkBackground: #402454;
+$toggleCheck: #5e9aa4; // teal accent
+$toggleSwitchSliderBG: #ced0cd; // light neutral grey
 
-// light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
-$lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+/* =========================
+   GitHub section
+   ========================= */
 
-// dark theme box shadows
-$darkBoxShadow: #d9dbdf;
-$darkBoxShadow2: #ffffff;
+$githubRepoCardLanguageColorBG: #5e9aa4; // teal (instead of pure blue)
+$githubRepoCardColor: #617080; // muted blue-grey
+$githubRepoCardRepoCardStatsColor: #8996a8;
+$githubRepoCardRepoNameColor: #402454;
 
-// linear gradients
+$githubProfileCardLocationTS: #f0e5f2; // soft lilac tint
+$githubProfileCardBorder: #a293b8; // lilac border
+
+/* =========================
+   Backgrounds
+   ========================= */
+
+// light backgrounds (soft, airy)
+$lightBackground1: #f7eeef; // warm off-white
+$lightBackground2: #ebe5e3; // light warm grey
+$lightBackground3: #d7ccd8; // pale lilac-grey
+
+// containers/cards
+$blogCardContainerColor: #ffffff;
+
+// dark theme background
+$darkBackground: #402454; // deep purple
+
+/* =========================
+   Shadows
+   ========================= */
+
+$lightBoxShadowDark: rgba(64, 36, 84, 0.18);
+$lightBoxShadow: rgba(64, 36, 84, 0.12);
+$lightBoxShadowDarker: rgba(64, 36, 84, 0.28);
+
+$darkBoxShadow: rgba(247, 238, 239, 0.18);
+$darkBoxShadow2: rgba(255, 255, 255, 0.12);
+
+/* =========================
+   Gradients
+   ========================= */
+
 $experienceCardBlurredDivLG: linear-gradient(
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.2)
+  rgba(64, 36, 84, 0.42),
+  rgba(64, 36, 84, 0.22)
 );
 $experienceCardBannerLG: linear-gradient(
-  rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.5)
+  rgba(64, 36, 84, 0.72),
+  rgba(64, 36, 84, 0.52)
 );
 
-// borders
-$progressBarBackground: rgb(243, 239, 239);
-$lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: #a9a7f9;
+/* =========================
+   Borders
+   ========================= */
 
-// hovers
-$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
-$blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
-$headerHoverBG: #f4f4f4;
-$contactDetailHoverTS: #b5b5b5;
+$progressBarBackground: #ebe5e3;
+$lightBorder1: rgba(206, 208, 205, 0.65);
+$educationCardBorder: #c0b2cf; // pale lilac border
 
-// misc backgrounds
-$progressBarSpanBG: #aaa5ff;
-$iconBackground: #333;
-$appHeaderBG: #282c34;
+/* =========================
+   Hovers
+   ========================= */
 
-// misc colors
-$skillsColor: #645beb;
-$appLink: #09d3ac;
+$achievementCertificateCardHoverDark: rgba(247, 238, 239, 0.16);
+$blogCardHoverSmallColor: rgba(247, 238, 239, 0.85);
+$headerHoverBG: #f0e5f2;
+$contactDetailHoverTS: #ced0cd;
 
-// social media icons
+/* =========================
+   Misc
+   ========================= */
+
+$progressBarSpanBG: #a293b8; // lilac fill
+$iconBackground: #3d6376; // muted teal-blue (icons pop nicely)
+$appHeaderBG: #402454; // deep purple header
+
+/* =========================
+   Social media (keep defaults)
+   ========================= */
+
 $faceBook: #3b5998;
 $linkedin: #0e76a8;
 $github: #333;
