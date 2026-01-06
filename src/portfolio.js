@@ -26,7 +26,7 @@ const greeting = {
     "I am a game and interactive developer who enjoys learning and exploring new ideas. I work primarily with Unity, using C# and C++ to build engaging interactive experiences and real-time systems."
   ),
   //resumeLink:
-    //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  //"https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -122,9 +122,11 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "DigiPen Institute of Technology Singapore (Singapore Institute of Technology)",
+      schoolName:
+        "DigiPen Institute of Technology Singapore (Singapore Institute of Technology)",
       logo: require("./assets/images/DigiPen_SingaporeLogo.png"),
-      subHeader: "BSc (Hons) in Computer Science in Interactive Media and Game Development",
+      subHeader:
+        "BSc (Hons) in Computer Science in Interactive Media and Game Development",
       duration: "August 2022 - April 2026",
       desc: "Studied programming and interactive development with an emphasis on game-related projects.",
       descBullets: [
@@ -132,7 +134,7 @@ const educationInfo = {
         "Gained hands-on experience with programming languages including C, C++, C#, and Python",
         "Used tools and software including Unity, Figma, Axure, and GitHub"
       ]
-    },
+    }
     // { // Will put TP in it
     //   schoolName: "Temasek Polytechnic",
     //   logo: require("./assets/images/stanfordLogo.png"),
