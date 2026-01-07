@@ -6,9 +6,9 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Importation of Icons (software skills)
-import { ReactComponent as AdobeXDIcon } from "./assets/icons/adobexd_icon.svg";
-import { ReactComponent as CPPIcon } from "./assets/icons/cpp_icon.svg";
-import { ReactComponent as CSharpIcon } from "./assets/icons/csharp_icon.svg";
+import {ReactComponent as AdobeXDIcon} from "./assets/icons/adobexd_icon.svg";
+import {ReactComponent as CPPIcon} from "./assets/icons/cpp_icon.svg";
+import {ReactComponent as CSharpIcon} from "./assets/icons/csharp_icon.svg";
 
 // Splash Screen
 
@@ -31,7 +31,7 @@ const greeting = {
     "I am a game and interactive developer who enjoys learning and exploring new ideas. I work primarily with Unity, using C# and C++ to build engaging interactive experiences and real-time systems."
   ),
   resumeLink:
-  "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -50,7 +50,8 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
+  subTitle:
+    "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -65,30 +66,28 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-  {
-    category: "Engines",
-    skills: [
-      { skillName: "Unity", fontAwesomeClassname: "fa-brands fa-unity" }
-    ]
-  },
-  {
-    category: "Languages",
-    skills: [
-      { skillName: "C#", svgIcon: CSharpIcon },
-      { skillName: "C++", svgIcon: CPPIcon },
-      //{ skillName: "C", imageSrc: require("./assets/icons/c.png") }
-    ]
-  },
-  {
-    category: "Tools",
-    skills: [
-      { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
-      { skillName: "Visual Studio", fontAwesomeClassname: "fas fa-code" },
-      { skillName: "Notion", fontAwesomeClassname: "fab fa-notion" },
-      { skillName: "Figma", fontAwesomeClassname: "fab fa-figma" },
-      { skillName: "AdobeXD", svgIcon: AdobeXDIcon }
-    ]
-  }
+    {
+      category: "Engines",
+      skills: [{skillName: "Unity", fontAwesomeClassname: "fa-brands fa-unity"}]
+    },
+    {
+      category: "Languages",
+      skills: [
+        {skillName: "C#", svgIcon: CSharpIcon},
+        {skillName: "C++", svgIcon: CPPIcon}
+        //{ skillName: "C", imageSrc: require("./assets/icons/c.png") }
+      ]
+    },
+    {
+      category: "Tools",
+      skills: [
+        {skillName: "GitHub", fontAwesomeClassname: "fab fa-github"},
+        {skillName: "Visual Studio", fontAwesomeClassname: "fas fa-code"},
+        {skillName: "Notion", fontAwesomeClassname: "fab fa-notion"},
+        {skillName: "Figma", fontAwesomeClassname: "fab fa-figma"},
+        {skillName: "AdobeXD", svgIcon: AdobeXDIcon}
+      ]
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -159,7 +158,7 @@ const workExperiences = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    },
+    }
     // {
     //   role: "Front-End Developer",
     //   company: "Quora",
