@@ -53,14 +53,19 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
+            {/* {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
                 alt="man sitting on table"
                 src={require("../../assets/images/manOnTable.svg")}
               ></img>
-            )}
+            )} */}
+              <img
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhwdWVkbzVxYmx2azcyeGJ2dzk2aXhnaGZkOXZ5ZXUycWsyZGZxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yyVph7ANKftIs/giphy.gif"
+                alt="Stitch animation"
+                className="greeting-gif"
+              />
           </div>
         </div>
       </div>

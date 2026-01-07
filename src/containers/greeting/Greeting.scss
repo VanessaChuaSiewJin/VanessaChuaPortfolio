@@ -120,6 +120,23 @@
   }
 }
 
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-gif {
+  //max-width: 520px;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+  border-radius: 15px; /* optional */
+}
+
+
 @media (max-width: 320px) {
   .main {
     width: auto;

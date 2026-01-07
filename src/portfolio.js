@@ -54,11 +54,11 @@ const skillsSection = {
     "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "◆ "
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("◆ "),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "◆ "
     )
   ],
 
