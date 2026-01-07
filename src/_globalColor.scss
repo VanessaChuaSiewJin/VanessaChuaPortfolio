@@ -6,7 +6,7 @@
 
 // Primary lilac (main action color)
 $buttonColor: #85729f; // lilac
-$buttonHover: #a293b8; // lighter lilac
+$buttonHover: #402454; // lighter lilac
 $topButtonHover: #402454; // deep purple
 
 // Links / accents
@@ -18,7 +18,7 @@ $skillsColor: #85729f; // lilac
    ========================= */
 
 $titleColor: #402454; // deep purple for headings
-$textColor: #262626; // readable dark grey
+$textColor: #402454; // readable dark grey
 $subTitle: #617080; // muted blue-grey
 $cardSubtitle: #666666;
 $talkCardSubTitle: #7f8287;
@@ -54,9 +54,15 @@ $githubProfileCardBorder: #a293b8; // lilac border
    ========================= */
 
 // light backgrounds (soft, airy)
-$lightBackground1: #f7eeef; // warm off-white
-$lightBackground2: #ebe5e3; // light warm grey
-$lightBackground3: #d7ccd8; // pale lilac-grey
+$lightBackground1: #C0B2CF;
+$lightBackground2: #D7CCD8; 
+$lightBackground3: black; 
+
+/* =========================
+   Global site background
+   ========================= */
+
+//$siteBackground: $lightBackground2; // main site lilac background
 
 // containers/cards
 $blogCardContainerColor: #ffffff;
@@ -102,7 +108,7 @@ $educationCardBorder: #c0b2cf; // pale lilac border
 
 $achievementCertificateCardHoverDark: rgba(247, 238, 239, 0.16);
 $blogCardHoverSmallColor: rgba(247, 238, 239, 0.85);
-$headerHoverBG: #f0e5f2;
+$headerHoverBG: #695678;
 $contactDetailHoverTS: #ced0cd;
 
 /* =========================
@@ -112,6 +118,14 @@ $contactDetailHoverTS: #ced0cd;
 $progressBarSpanBG: #a293b8; // lilac fill
 $iconBackground: #3d6376; // muted teal-blue (icons pop nicely)
 $appHeaderBG: #402454; // deep purple header
+
+/* =========================
+   Icon Colors
+   ========================= */
+
+$iconMono: #617080; // pick your grey/lilac-grey
+$iconMonoHover: $skillsColor; // your accent on hover
+
 
 /* =========================
    Social media (keep defaults)

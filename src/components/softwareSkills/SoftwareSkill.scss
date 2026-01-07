@@ -3,29 +3,50 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  font-size: 50px;
+  color: $iconMono;
 }
 
 .software-skill-inline > i:hover {
+  color: $iconMonoHover;
+}
+
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  color: $subTitle;
+
+  opacity: 1;
+}
+
+.software-skill-inline:hover .skill-icon,
+.software-skill-inline:hover i {
+  fill: $skillsColor;
   color: $skillsColor;
 }
+
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
+  margin: 8px 0 0;
 }
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
-}
+
