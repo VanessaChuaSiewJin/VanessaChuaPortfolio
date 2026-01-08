@@ -52,15 +52,7 @@ const skillsSection = {
   title: "What I do",
   subTitle:
     "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
-  skills: [
-    emoji(
-      "◆ "
-    ),
-    emoji("◆ "),
-    emoji(
-      "◆ "
-    )
-  ],
+  skills: [emoji("◆ "), emoji("◆ "), emoji("◆ ")],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
