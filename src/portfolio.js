@@ -179,17 +179,17 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "SOME PROJECTS THAT I HAVE WORKED ON",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "SG60 Heart & Soul Exhibition",
+      projectDesc: "Worked on Arrival Feature Wall & Home Is A Feeling",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://www.heartandsoul.gov.sg/"
         }
         //  you can add extra buttons here.
       ]
