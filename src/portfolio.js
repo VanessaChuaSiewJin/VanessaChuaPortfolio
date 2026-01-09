@@ -6,9 +6,13 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Importation of Icons (software skills)
+import {ReactComponent as PlayCanvasIcon} from "./assets/icons/playcanvas_icon.svg";
 import {ReactComponent as AdobeXDIcon} from "./assets/icons/adobexd_icon.svg";
 import {ReactComponent as CPPIcon} from "./assets/icons/cpp_icon.svg";
 import {ReactComponent as CSharpIcon} from "./assets/icons/csharp_icon.svg";
+import {ReactComponent as PhotoShopIcon} from "./assets/icons/photoshop_icon.svg";
+
+import {ReactComponent as DigipenLogo} from "./assets/images/DigiPen_SingaporeLogo_Black.svg";
 
 // Splash Screen
 
@@ -52,7 +56,15 @@ const skillsSection = {
   title: "What I do",
   subTitle:
     "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
-  skills: [emoji("◆ "), emoji("◆ "), emoji("◆ ")],
+  skills: [
+    emoji("◆ Develop interactive and game projects using Unity and PlayCanvas"),
+    emoji(
+      "◆ Collaborate with producers, designers, artists, 3D generalists, and animators to turn ideas into playable experiences"
+    ),
+    emoji(
+      "◆ Prototype and iterate on interactive systems by translating Figma designs into Unity implementations and refining through playtesting"
+    )
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -60,7 +72,10 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       category: "Engines",
-      skills: [{skillName: "Unity", fontAwesomeClassname: "fa-brands fa-unity"}]
+      skills: [
+        {skillName: "Unity", fontAwesomeClassname: "fa-brands fa-unity"},
+        {skillName: "PlayCanvas", svgIcon: PlayCanvasIcon}
+      ]
     },
     {
       category: "Languages",
@@ -77,7 +92,8 @@ https://fontawesome.com/icons?d=gallery */
         {skillName: "Visual Studio", fontAwesomeClassname: "fas fa-code"},
         {skillName: "Notion", fontAwesomeClassname: "fab fa-notion"},
         {skillName: "Figma", fontAwesomeClassname: "fab fa-figma"},
-        {skillName: "AdobeXD", svgIcon: AdobeXDIcon}
+        {skillName: "AdobeXD", svgIcon: AdobeXDIcon},
+        {skillName: "Photoshop", svgIcon: PhotoShopIcon}
       ]
     }
   ],
@@ -92,7 +108,7 @@ const educationSection = {
     {
       schoolName:
         "DigiPen Institute of Technology Singapore (Singapore Institute of Technology)",
-      logo: require("./assets/images/DigiPen_SingaporeLogo.png"),
+      logoComponent: DigipenLogo,
       subHeader:
         "BSc (Hons) in Computer Science in Interactive Media and Game Development",
       duration: "August 2022 - April 2026",
@@ -120,16 +136,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Gameplay & Interaction Systems", //Insert stack or technology you have experience in
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
+      Stack: "Game Engines & Tooling",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Design & Prototyping",
+      progressPercentage: "55%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -181,27 +197,252 @@ const openSource = {
 const bigProjects = {
   title: "Projects",
   subtitle: "SOME PROJECTS THAT I HAVE WORKED ON",
-  projects: [
+  sections: [
+    // CRAVEFX
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "SG60 Heart & Soul Exhibition",
-      projectDesc: "Worked on Arrival Feature Wall & Home Is A Feeling",
-      footerLink: [
+      sectionTitle: "Internship Projects",
+      projects: [
         {
-          name: "Visit Website",
-          url: "https://www.heartandsoul.gov.sg/"
+          image: require("./assets/images/saayaHealthLogo.webp"),
+          projectName: "SG60 Heart & Soul Exhibition",
+          projectDesc: "Worked on Arrival Feature Wall & Home Is A Feeling",
+          footerLink: [
+            {
+              name: "Visit Website",
+              url: "https://www.heartandsoul.gov.sg/"
+            }
+          ]
+        },
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Heineken Connected Bar",
+          projectDesc: "Interactive web for Heineken",
+          footerLink: [
+            {
+              name: "Visit Website",
+              url: "http://nextu.se/"
+            }
+          ]
+        },
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "T5 In The Making Exhibition",
+          projectDesc: "Worked on kiosk interactivity",
+          footerLink: [
+            {
+              name: "Visit Website",
+              url: "https://www.changiairport.com/en/happenings/events-directory/t5-in-the-making.html"
+            }
+          ]
         }
-        //  you can add extra buttons here.
+      ]
+    },
+    // DIGIPEN
+    {
+      sectionTitle: "Digipen School Projects",
+      projects: [
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Keep It Brief",
+          videoEmbed:
+            "https://www.youtube.com/embed/vzexESdUBdo?si=1quqgs-95J-v1ejV",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://youtu.be/vzexESdUBdo?si=r9wKfE-LXy05UmAT"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Purrfect Putt!!",
+          videoEmbed:
+            "https://www.youtube.com/embed/SZhhRPjjCzA?si=PADhZSFAo1OqDAw1",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=SZhhRPjjCzA"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "KoKopalms Adventure",
+          videoEmbed:
+            "https://www.youtube.com/embed/4aNe6FhXW7Y?si=ffIUMb7R9TeaIEaC",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=4aNe6FhXW7Y"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Deflect",
+          videoEmbed:
+            "https://www.youtube.com/embed/6ftVcL10mJ8?si=5d2gvL0QrmuGW8Xd",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=6ftVcL10mJ8"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Reliving The Dead",
+          videoEmbed:
+            "https://www.youtube.com/embed/hd4BJYaZigs?si=BSa08D68KSurWLR6",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=hd4BJYaZigs"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Kill & Survive",
+          videoEmbed:
+            "https://www.youtube.com/embed/f9s8Ke8DOqY?si=hCxldACd0ZpPy2IM",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=f9s8Ke8DOqY"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Mobile Computing Project",
+          videoEmbed:
+            "https://www.youtube.com/embed/1wRyfeFr7vI?si=EVQb4ybGhwqNFDdI",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=1wRyfeFr7vI"
+            }
+          ]
+        }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      sectionTitle: "Temasek Polytechnic Projects",
+      projects: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "The Mini Escape",
+          videoEmbed:
+            "https://www.youtube.com/embed/53BLoKajY08?si=KgRkTpGKkdJB7aHd",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://www.youtube.com/watch?v=53BLoKajY08"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Crimson Song Adventure Gameplay",
+          videoEmbed:
+            "https://www.youtube.com/embed/bz4Hd1zBYNU?si=pg4VThfcYCWgKjvx",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://youtu.be/bz4Hd1zBYNU?si=_a5gWzSBZNnIklvI"
+            }
+          ]
+        },
+        {
+          //image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Ceendi vs The Sea Pollutants",
+          videoEmbed:
+            "https://www.youtube.com/embed/L47-fkvqpYo?si=PrF-oaKHN4ZIb8lJ",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "Watch on YouTube",
+              url: "https://youtu.be/L47-fkvqpYo?si=_dGo2W31bGySqkJp"
+            }
+          ]
+        },
+        // {
+        //   //image: require("./assets/images/nextuLogo.webp"),
+        //   projectName: "Sugar Control",
+        //   projectDesc: "",
+        //   footerLink: [
+        //     {
+        //       //PUT VIDEO
+        //       name: "",
+        //       url: ""
+        //     }
+        //   ]
+        // },
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Donutty Catch",
+          videoEmbed:
+            "https://www.youtube.com/embed/M1O-GwAE6wM?si=G2u2U59qbVSrWlXs",
+          projectDesc: "",
+          footerLink: [
+            {
+              //PUT VIDEO
+              name: "",
+              url: "https://www.youtube.com/watch?v=M1O-GwAE6wM"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      sectionTitle: "Game Jams",
+      sectionLink: {
+        label: "itch.io",
+        url: "https://b0b0chacha.itch.io/"
+      },
+      projects: [
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Museum of lights",
+          projectDesc: "",
+          footerLink: [
+            {
+              name: "Visit Game",
+              url: "https://jarrett-ang.itch.io/museum-of-lights"
+            }
+          ]
+        },
+        {
+          image: require("./assets/images/nextuLogo.webp"),
+          projectName: "Scrap Collector",
+          projectDesc: "",
+          footerLink: [
+            {
+              name: "Visit Game",
+              url: "https://cheekyknob.itch.io/scrap-collector"
+            }
+          ]
         }
       ]
     }

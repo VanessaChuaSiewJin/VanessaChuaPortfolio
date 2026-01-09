@@ -1,22 +1,7 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
-}
-.card-title {
-  color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
-}
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
-}
+/* ---------------- CARD BASE ---------------- */
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -26,65 +11,171 @@
   border: 1px solid $lightBorder1;
   justify-content: center;
 }
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
+.dark-mode.project-card-dark {
+  background-color: $darkBackgroundCard;
+  border: 1px solid rgba($textColorDark, 0);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
+
+.project-card-light:hover {
+  box-shadow: 0px 20px 40px -10px $lightBoxShadowDark;
+}
+
+.project-card-dark:hover {
+  box-shadow: 0px 20px 40px -10px $darkBoxShadow;
+}
+
+/* ---------------- MEDIA ---------------- */
+
+.project-media {
+  margin-bottom: 1rem;
+}
+
+/* Video (16:9) */
+.project-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.project-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Image */
+.project-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dark-mode .project-image,
+.dark-mode .project-video {
+  //background-color: lighten($darkBackground, 10%);
+  background: transparent !important;
+}
+
+/* ---------------- TEXT ---------------- */
 
 .project-detail {
   text-align: center;
 }
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.card-title {
+  color: $titleColor;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.5rem;
 }
+
+.dark-mode.card-title {
+  color: $textColorDark;
+  background: transparent;
+}
+
+.dark-mode.card-subtitle {
+  color: rgba($textColorDark, 0.75);
+  background: transparent;
+}
+
+/* ---------------- FOOTER TAGS ---------------- */
 
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
-  vertical-align: middle;
-  align-items: center;
   border-radius: 4px;
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
   justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
+  align-items: center;
   margin: 0 0.5rem 0.5rem 0;
   padding: 0 0.75em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
+/* ---------------- GRID ---------------- */
+
+.projects-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-card {
+  flex: 0 0 380px;
+  max-width: 380px;
+  scroll-snap-align: start;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.project-section {
+  margin-bottom: 4rem;
+}
+
+.project-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 2rem 0 1.5rem;
+}
+
+.project-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.dark-mode.project-section-title {
+  color: $textColorDark;
+}
+
+.section-external-link {
+  margin-left: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: $buttonColor;
+}
+
+.section-external-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- MOBILE ---------------- */
+
 @media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
-    text-align: center;
+  .project-card {
+    flex: 0 0 85%;
+    max-width: 85%;
   }
 }
