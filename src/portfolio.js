@@ -12,7 +12,9 @@ import {ReactComponent as CPPIcon} from "./assets/icons/cpp_icon.svg";
 import {ReactComponent as CSharpIcon} from "./assets/icons/csharp_icon.svg";
 import {ReactComponent as PhotoShopIcon} from "./assets/icons/photoshop_icon.svg";
 
+// School Logo
 import {ReactComponent as DigipenLogo} from "./assets/images/DigiPen_SingaporeLogo_Black.svg";
+import {ReactComponent as TPLogo} from "./assets/images/Temasek Polytechnic_Logo.svg";
 
 // Splash Screen
 
@@ -107,26 +109,30 @@ const educationSection = {
   schools: [
     {
       schoolName:
-        "DigiPen Institute of Technology Singapore (Singapore Institute of Technology)",
+        "DigiPen Institute of Technology (Singapore) — Singapore Institute of Technology (SIT)",
       logoComponent: DigipenLogo,
       subHeader:
-        "BSc (Hons) in Computer Science in Interactive Media and Game Development",
-      duration: "August 2022 - April 2026",
-      desc: "Studied programming and interactive development with an emphasis on game-related projects.",
+        "BSc (Hons) Computer Science in Interactive Media and Game Development",
+      duration: "Aug 2022 - Apr 2026",
+      desc: "Specialized in interactive software and game development through team projects spanning engine-level systems and complete gameplay prototypes.",
       descBullets: [
-        "Worked on group projects involving the development of a game engine and a complete game",
-        "Gained hands-on experience with programming languages including C, C++, C#, and Python",
-        "Used tools and software including Unity, Figma, Axure, and GitHub"
+        "Built core systems for custom-engine projects (C/C++): integrated FMOD via an internal wrapper (3D spatial audio), implemented enemy state machines, and extended math utilities",
+        "Collaborated using Git workflows (branching, pull requests, code reviews, merge conflict resolution) and issue tracking (GitHub Issues)",
+        "Used Unity and prototyping tools such as Figma across coursework and projects"
+      ]
+    },
+    {
+      schoolName: "Temasek Polytechnic",
+      logoComponent: TPLogo,
+      subHeader: "Diploma in Game Design and Development",
+      duration: "Apr 2019 - May 2022",
+      desc: "Built game prototypes and learned the end-to-end pipeline from development to basic 3D art.",
+      descBullets: [
+        "Developed team-based game projects in Unity (C#), contributing to gameplay systems and UI",
+        "Created 3D assets in Maya and produced basic textures in Photoshop",
+        "Prototyped designs and collaborated using tools like Adobe XD and GitHub"
       ]
     }
-    // { // Will put TP in it
-    //   schoolName: "Temasek Polytechnic",
-    //   logo: require("./assets/images/stanfordLogo.png"),
-    //   subHeader: "Bachelor of Science in Computer Science",
-    //   duration: "September 2013 - April 2017",
-    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    // }
   ]
 };
 

@@ -10,7 +10,7 @@ export default function EducationCard({school}) {
   const GetDescBullets = ({descBullets}) =>
     descBullets
       ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
+          <li key={i} className="education-bullet">
             {item}
           </li>
         ))
@@ -28,7 +28,7 @@ export default function EducationCard({school}) {
   return (
     <div>
       <Fade left duration={1000}>
-        <div className="education-card">
+        <div className={`education-card ${isDark ? "dark-mode" : ""}`}>
           {hasAnyLogo && (
             <div className="education-card-left">
               {Logo ? (
@@ -53,23 +53,9 @@ export default function EducationCard({school}) {
             <h5 className="education-text-school">{school.schoolName}</h5>
 
             <div className="education-text-details">
-              <h5
-                className={
-                  isDark
-                    ? "dark-mode education-text-subHeader"
-                    : "education-text-subHeader"
-                }
-              >
-                {school.subHeader}
-              </h5>
+              <h5 className="education-text-subHeader">{school.subHeader}</h5>
 
-              <p
-                className={`${
-                  isDark ? "dark-mode" : ""
-                } education-text-duration`}
-              >
-                {school.duration}
-              </p>
+              <p className="education-text-duration">{school.duration}</p>
 
               <p className="education-text-desc">{school.desc}</p>
 

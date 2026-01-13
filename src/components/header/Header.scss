@@ -49,6 +49,7 @@
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: $headerHoverBG;
+  color: $headerHoverText;
 }
 
 .header .logo {

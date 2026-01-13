@@ -17,6 +17,8 @@
 
 .education-card-right {
   max-width: 70%;
+  min-width: 0;
+  flex: 1;
 }
 
 /* ======================================================
@@ -37,22 +39,24 @@
 }
 
 /* Dark mode SVG color */
-.dark-mode .education-logo-svg,
 .education-logo-svg.is-dark {
   color: $textColorDark;
 }
 
 /* ======================================================
-   TEXT / TYPOGRAPHY
+   TEXT / TYPOGRAPHY (LIGHT DEFAULTS)
    ====================================================== */
 
 .education-text-school {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  overflow-wrap: anywhere;
+  color: $titleColor;
 }
 
 .education-text-subHeader {
@@ -72,10 +76,44 @@
 
 .education-text-desc {
   margin: 0.5rem 0;
+  color: $subTitle;
 }
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+}
+
+/* ======================================================
+   BULLETS (SCOPED)
+   ====================================================== */
+
+.education-bullet {
+  color: $subTitle;
+}
+
+/* ======================================================
+   DARK MODE OVERRIDES
+   ====================================================== */
+
+.education-card.dark-mode .education-text-school {
+  color: $textColorDark;
+}
+
+.education-card.dark-mode .education-text-subHeader {
+  color: $textColorDark;
+}
+
+.education-card.dark-mode .education-text-duration {
+  color: $subTitleDark; // makes the years readable on dark bg
+}
+
+.education-card.dark-mode .education-text-desc {
+  color: $subTitleDark;
+}
+
+.education-card.dark-mode .education-bullet,
+.education-card.dark-mode .education-bullet::marker {
+  color: $subTitleDark;
 }
 
 /* ======================================================
