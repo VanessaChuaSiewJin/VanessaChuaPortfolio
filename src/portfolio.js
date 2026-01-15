@@ -413,7 +413,7 @@ const bigProjects = {
           footerLink: [
             {
               //PUT VIDEO
-              name: "",
+              name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=M1O-GwAE6wM"
             }
           ]
@@ -429,7 +429,7 @@ const bigProjects = {
       },
       projects: [
         {
-          image: require("./assets/images/nextuLogo.webp"),
+          image: require("./assets/images/MuseumOfLights.png"),
           projectName: "Museum of lights",
           projectDesc: "",
           footerLink: [
@@ -440,7 +440,7 @@ const bigProjects = {
           ]
         },
         {
-          image: require("./assets/images/nextuLogo.webp"),
+          image: require("./assets/images/ScrapCollector.png"),
           projectName: "Scrap Collector",
           projectDesc: "",
           footerLink: [
