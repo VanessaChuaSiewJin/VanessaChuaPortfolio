@@ -7,30 +7,51 @@ export default function AchievementCard({cardInfo, isDark}) {
       console.log(`URL for ${name} not found`);
       return;
     }
-    var win = window.open(url, "_blank");
-    win.focus();
+    const win = window.open(url, "_blank");
+    win && win.focus();
   }
+
+  // Support BOTH formats:
+  // - old: image / description / footer
+  // - new: icon / subtitle / footerLink
+  const Icon = cardInfo.icon;
+  const title = cardInfo.title;
+  const subtitle = cardInfo.subtitle ?? cardInfo.description;
+  const links = cardInfo.footerLink ?? cardInfo.footer ?? [];
 
   return (
     <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
       <div className="certificate-image-div">
-        <img
-          src={cardInfo.image}
-          alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
-        ></img>
+        {Icon ? (
+          <Icon
+            className={`achievement-icon ${isDark ? "is-dark" : ""}`}
+            aria-label={cardInfo.iconAlt || title}
+          />
+        ) : (
+          cardInfo.image && (
+            <img
+              src={cardInfo.image}
+              alt={cardInfo.imageAlt || "Card Thumbnail"}
+              className="card-image"
+            />
+          )
+        )}
       </div>
+
       <div className="certificate-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
-          {cardInfo.title}
+          {title}
         </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
-        </p>
+        {subtitle && (
+          <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
+            {subtitle}
+          </p>
+        )}
       </div>
-      <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
+
+      {links.length > 0 && (
+        <div className="certificate-card-footer">
+          {links.map((v, i) => (
             <span
               key={i}
               className={
@@ -40,9 +61,9 @@ export default function AchievementCard({cardInfo, isDark}) {
             >
               {v.name}
             </span>
-          );
-        })}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -75,3 +75,27 @@
 span.certificate-tag:hover {
   background: $buttonHover;
 }
+
+/* ───────────────────────────── */
+/* Achievement Icon (SVG) */
+/* ───────────────────────────── */
+
+// Lilac tones for achievements
+.certificate-image-div {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon {
+  width: 96px;
+  height: 96px;
+  color: #ffff72; // lilac (light mode)
+}
+
+.dark-mode .achievement-icon,
+.achievement-icon.is-dark {
+  color: #ffff72; // lighter lilac for dark mode
+}

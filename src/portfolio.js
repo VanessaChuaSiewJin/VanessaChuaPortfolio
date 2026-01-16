@@ -16,6 +16,9 @@ import {ReactComponent as PhotoShopIcon} from "./assets/icons/photoshop_icon.svg
 import {ReactComponent as DigipenLogo} from "./assets/images/DigiPen_SingaporeLogo_Black.svg";
 import {ReactComponent as TPLogo} from "./assets/images/Temasek Polytechnic_Logo.svg";
 
+//Achievement logo
+import {ReactComponent as StarIcon} from "./assets/icons/star_icon2.svg";
+
 // Splash Screen
 
 const splashScreen = {
@@ -167,23 +170,34 @@ const workExperiences = {
       company: "CraveFX",
       companylogo: require("./assets/images/CraveFX_Logo.png"),
       date: "May 2025 - Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Developed interactive systems for large-scale exhibitions and installations using Unity, focusing on real-time interaction, UI logic, and gameplay-style mechanics in collaborative production environments.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Worked on SG60 Heart & Soul Exhibition, Heineken Connected Bars, T5 In The Making Exhibition",
+        "Developed interactive features and real time systems in Unity (C#) for exhibition installations",
+        "Implemented UI interactions, state-driven flows, and input handling for touch-based experiences",
+        "Collaborated closely with designers, producers, and artists to translate concepts and Figma designs into working prototypes",
+        "Debugged and optimized interaction logic to ensure stable performance in public-facing installations",
+        "Adapting quickly to changing requirements and timelines"
+      ]
+    },
+    {
+      role: "Game Design Intern",
+      company: "Stepping Stone Studio LLP",
+      companylogo: require("./assets/images/quoraLogo.png"),
+      date: "Jul 2021 - Nov 2021",
+      desc: "Supported the development of a 2D mobile game by contributing to level design, gameplay iteration, and pixel art asset creation in Unity.",
+      descBullets: [
+        "Worked on Crimson Song Adventure",
+        "Designed and iterated on 2D levels using Unity Tilemap, focusing on pacing, difficulty balance, and player flow",
+        "Created 2D environmental pixel art assets and tilesets using Piskel",
+        "Rigged and animated 2D sprites using Unity Animator for in-game characters",
+        "Playtested levels regularly and refined layouts based on gameplay feedback"
       ]
     }
     // {
-    //   role: "Front-End Developer",
-    //   company: "Quora",
-    //   companylogo: require("./assets/images/quoraLogo.png"),
-    //   date: "May 2017 – May 2018",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // },
-    // {
     //   role: "Software Engineer Intern",
     //   company: "Airbnb",
-    //   companylogo: require("./assets/images/airbnbLogo.png"),
+    //   companylogo: require("./assets/images/CraveFX_Logo.png"),
     //   date: "Jan 2015 – Sep 2015",
     //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     // }
@@ -206,7 +220,7 @@ const bigProjects = {
   sections: [
     // CRAVEFX
     {
-      sectionTitle: "Internship Projects",
+      sectionTitle: "CraveFX Projects",
       projects: [
         {
           image: require("./assets/images/saayaHealthLogo.webp"),
@@ -458,63 +472,68 @@ const bigProjects = {
 
 // Achievement Section
 // Include certificates, talks etc
-
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements And Recognition 🏆"),
+  subtitle: "Academic awards, certifications, and distinctions",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "Edusave Merit Bursary",
+      subtitle: "2020",
+      icon: StarIcon,
+      iconAlt: "Edusave Merit Bursary"
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title:
+        "Edusave Award for Achievement, Good Leadership & Service (EAGLES)",
+      subtitle: "2012, 2017",
+      icon: StarIcon,
+      iconAlt: "EAGLES Award"
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Edusave Certificate of Academic Achievement",
+      subtitle: "2015, 2016",
+      icon: StarIcon,
+      iconAlt: "Edusave Academic Achievement"
+    },
+    {
+      title: "Edusave Character Award",
+      subtitle: "2015",
+      icon: StarIcon,
+      iconAlt: "Edusave Character Award"
+    },
+    {
+      title: "R3lse Award Winner - Resilience",
+      subtitle: "2015",
+      icon: StarIcon,
+      iconAlt: "R3lse Award"
+    },
+    {
+      title: "First in Computer Application (2T1)",
+      subtitle: "2015",
+      icon: StarIcon,
+      iconAlt: "First in Computer Application"
+    },
+    {
+      title: "First in Standard (2T1)",
+      subtitle: "2015",
+      icon: StarIcon,
+      iconAlt: "First in Standard"
+    },
+    {
+      title: "Model Learner Award",
+      subtitle: "2015, 2018",
+      icon: StarIcon,
+      iconAlt: "Model Learner Award"
+    },
+    {
+      title: "Edusave Scholarship",
+      subtitle: "2013, 2014",
+      icon: StarIcon,
+      iconAlt: "Edusave Scholarship"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Resume Section
