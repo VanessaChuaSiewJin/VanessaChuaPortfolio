@@ -1,11 +1,15 @@
 @import "../../_globalColor";
 
 /*React-headroom*/
-.headroom-wrapper {
-  max-height: 100px;
-}
+// .headroom-wrapper {
+//   max-height: none;
+// }
 
 /* header */
+.header {
+  height: auto;
+  min-height: 64px;
+}
 
 .dark-menu {
   background-color: $darkBackground !important;
@@ -22,9 +26,11 @@
 
 .header {
   background-color: $lightBackground1;
-  max-width: 100%;
+  width: 100%;
   padding: 15px 20px;
-  margin: 0px auto;
+  margin: 0 auto;
+  height: auto;
+  min-height: 64px;
 }
 
 .header ul {
@@ -182,5 +188,15 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative; // prevents fixed-layout issues
+  }
+
+  .headroom-wrapper {
+    max-height: none;
   }
 }
