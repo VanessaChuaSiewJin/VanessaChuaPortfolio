@@ -38,17 +38,43 @@
 }
 .certificate-image-div {
   position: relative;
-  height: 250px;
+  height: 160px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .certificate-image-div {
+    height: 120px;
+  }
+}
+
 .achievement-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .certificate-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-icon {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 .certificate-card-footer {
   display: flex;
   align-items: center;
