@@ -239,7 +239,7 @@ const bigProjects = {
           projectDesc: "Interactive web for Heineken",
           footerLink: [
             {
-              name: "Visit Website",
+              name: "Visit Website"
               //url: "http://nextu.se/"
             }
           ]
