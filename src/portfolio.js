@@ -223,7 +223,7 @@ const bigProjects = {
       sectionTitle: "CraveFX Projects",
       projects: [
         {
-          image: require("./assets/images/saayaHealthLogo.webp"),
+          //image: require("./assets/images/saayaHealthLogo.webp"),
           projectName: "SG60 Heart & Soul Exhibition",
           projectDesc: "Worked on Arrival Feature Wall & Home Is A Feeling",
           footerLink: [
@@ -234,7 +234,7 @@ const bigProjects = {
           ]
         },
         {
-          image: require("./assets/images/nextuLogo.webp"),
+          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Heineken Connected Bar",
           projectDesc: "Interactive web for Heineken",
           footerLink: [
@@ -245,7 +245,7 @@ const bigProjects = {
           ]
         },
         {
-          image: require("./assets/images/nextuLogo.webp"),
+          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "T5 In The Making Exhibition",
           projectDesc: "Worked on kiosk interactivity",
           footerLink: [
