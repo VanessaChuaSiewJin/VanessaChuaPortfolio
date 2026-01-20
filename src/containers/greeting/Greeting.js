@@ -7,6 +7,9 @@ import Button from "../../components/button/Button";
 import StyleContext from "../../contexts/StyleContext";
 import {greeting} from "../../portfolio";
 
+//my own gif
+import portfolioOverview from "../../assets/videos/ProjOverview.gif"; // adjust path
+
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
@@ -60,8 +63,8 @@ export default function Greeting() {
               ></img>
             )} */}
             <img
-              src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXhwdWVkbzVxYmx2azcyeGJ2dzk2aXhnaGZkOXZ5ZXUycWsyZGZxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yyVph7ANKftIs/giphy.gif"
-              alt="Stitch animation"
+              src={portfolioOverview}
+              alt="Project Overview"
               className="greeting-gif"
             />
           </div>
