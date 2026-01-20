@@ -8,7 +8,7 @@ const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
+  const [prof, setrepo] = useState([null]);
   function setProfileFunction(array) {
     setrepo(array);
   }
@@ -16,16 +16,18 @@ export default function Profile() {
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
       const getProfileData = () => {
-        fetch("/profile.json")
+        fetch("./profile.json")
           .then(result => {
-            if (result.ok) {
-              return result.json();
-            }
+            if (!result.ok)
+              throw new Error(`profile.json HTTP ${result.status}`);
+            return result.json();
           })
           .then(response => {
-            setProfileFunction(response.data.user);
+            const user = response?.data?.user;
+            if (!user) throw new Error("profile.json missing data.user");
+            setProfileFunction(user);
           })
-          .catch(function (error) {
+          .catch(error => {
             console.error(
               `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
             );
@@ -39,6 +41,7 @@ export default function Profile() {
   if (
     openSource.display &&
     openSource.showGithubProfile === "true" &&
+    prof &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
     return (
