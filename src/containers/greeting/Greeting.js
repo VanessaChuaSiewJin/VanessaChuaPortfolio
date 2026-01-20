@@ -7,27 +7,27 @@ import Button from "../../components/button/Button";
 import StyleContext from "../../contexts/StyleContext";
 import {greeting} from "../../portfolio";
 
-//my own gif
-import portfolioOverviewMp4 from "../../assets/videos/ProjOverview_web.mp4"; // adjust path
+import portfolioOverviewMp4 from "../../assets/videos/ProjOverview_web.mp4";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
-  if (!greeting.displayGreeting) {
-    return null;
-  }
+
+  if (!greeting.displayGreeting) return null;
+
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
+    <div className="greet-main" id="greeting">
+      <div className="greeting-main">
+        {/* Fade ONLY the text side */}
+        <Fade bottom duration={1000} distance="40px">
           <div className="greeting-text-div">
             <div>
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+
               <p
                 className={
                   isDark
@@ -37,8 +37,10 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
+
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
+
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
@@ -53,37 +55,26 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {/* {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )} */}
-            {/* <img
-              src={portfolioOverview}
-              alt="Project Overview"
-              className="greeting-gif"
-            /> */}
-            <video
-              className="greeting-gif"
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              disablePictureInPicture
-              controls={false}
-              style={{pointerEvents: "none"}}
-              onPause={e => e.currentTarget.play()}
-            >
-              <source src={portfolioOverviewMp4} type="video/mp4" />
-            </video>
-          </div>
+        </Fade>
+
+        {/* Video OUTSIDE Fade (prevents transform/compositing issues) */}
+        <div className="greeting-image-div">
+          <video
+            className="greeting-gif"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            disablePictureInPicture
+            controls={false}
+            style={{pointerEvents: "none"}}
+            onPause={e => e.currentTarget.play()}
+          >
+            <source src={portfolioOverviewMp4} type="video/mp4" />
+          </video>
         </div>
       </div>
-    </Fade>
+    </div>
   );
 }
