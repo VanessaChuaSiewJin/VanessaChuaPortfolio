@@ -7,7 +7,7 @@ import Button from "../../components/button/Button";
 import StyleContext from "../../contexts/StyleContext";
 import {greeting} from "../../portfolio";
 
-import portfolioOverviewMp4 from "../../assets/videos/ProjOverview_web.mp4";
+//import portfolioOverviewMp4 from "../../assets/videos/ProjOverview_web.mp4";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -71,7 +71,10 @@ export default function Greeting() {
             style={{pointerEvents: "none"}}
             onPause={e => e.currentTarget.play()}
           >
-            <source src={portfolioOverviewMp4} type="video/mp4" />
+            <source
+              src={`${process.env.PUBLIC_URL}/videos/ProjOverview_web.mp4`}
+              type="video/mp4"
+            />
           </video>
         </div>
       </div>
