@@ -8,7 +8,7 @@ import StyleContext from "../../contexts/StyleContext";
 import {greeting} from "../../portfolio";
 
 //my own gif
-import portfolioOverview from "../../assets/videos/ProjOverview.gif"; // adjust path
+import portfolioOverview from "../../assets/videos/ProjOverview_2.gif"; // adjust path
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
