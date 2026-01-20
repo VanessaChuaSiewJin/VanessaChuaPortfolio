@@ -8,7 +8,7 @@ import StyleContext from "../../contexts/StyleContext";
 import {greeting} from "../../portfolio";
 
 //my own gif
-import portfolioOverview from "../../assets/videos/ProjOverview_2.gif"; // adjust path
+import portfolioOverviewMp4 from "../../assets/videos/SnippetsOfProjects_60.mp4"; // adjust path
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -62,10 +62,22 @@ export default function Greeting() {
                 src={require("../../assets/images/manOnTable.svg")}
               ></img>
             )} */}
-            <img
+            {/* <img
               src={portfolioOverview}
               alt="Project Overview"
               className="greeting-gif"
+            /> */}
+            <video
+              className="greeting-gif"
+              src={portfolioOverviewMp4}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+              controlsList="nodownload noplaybackrate noremoteplayback"
+              style={{pointerEvents: "none"}} // prevents clicks from pausing in many cases
             />
           </div>
         </div>
