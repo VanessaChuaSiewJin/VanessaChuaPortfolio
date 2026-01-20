@@ -76,9 +76,11 @@ export default function Greeting() {
               playsInline
               preload="auto"
               disablePictureInPicture
-              controlsList="nodownload noplaybackrate noremoteplayback"
+              controlsList={false}
               style={{pointerEvents: "none"}} // prevents clicks from pausing in many cases
-            />
+            >
+              <source src={portfolioOverviewMp4} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
