@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/VanessaChuaPortfolio/static/css/main.ab93e23d.css",
-    "main.js": "/VanessaChuaPortfolio/static/js/main.ba2e9f19.js",
+    "main.js": "/VanessaChuaPortfolio/static/js/main.6ada84ee.js",
     "static/css/64.499264d4.chunk.css": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/VanessaChuaPortfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.8d400373.chunk.css": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css",
     "static/js/769.c53e41ba.chunk.js": "/VanessaChuaPortfolio/static/js/769.c53e41ba.chunk.js",
-    "static/media/ProjOverview_2.gif": "/VanessaChuaPortfolio/static/media/ProjOverview_2.51e087ddeef9e04f0cbf.gif",
+    "static/media/SnippetsOfProjects_60.mp4": "/VanessaChuaPortfolio/static/media/SnippetsOfProjects_60.4826d2140f4d64572c29.mp4",
     "static/media/Montserrat-Regular.ttf": "/VanessaChuaPortfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/VanessaChuaPortfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/MuseumOfLights.png": "/VanessaChuaPortfolio/static/media/MuseumOfLights.023de6b064885829d670.png",
@@ -27,7 +27,7 @@
     "static/media/adobexd_icon.svg": "/VanessaChuaPortfolio/static/media/adobexd_icon.3292fd24c94d2bc95dbefa595a704447.svg",
     "static/media/playcanvas_icon.svg": "/VanessaChuaPortfolio/static/media/playcanvas_icon.e7f267e6c2ed52eec4d0f1d3d3be2d99.svg",
     "main.ab93e23d.css.map": "/VanessaChuaPortfolio/static/css/main.ab93e23d.css.map",
-    "main.ba2e9f19.js.map": "/VanessaChuaPortfolio/static/js/main.ba2e9f19.js.map",
+    "main.6ada84ee.js.map": "/VanessaChuaPortfolio/static/js/main.6ada84ee.js.map",
     "64.499264d4.chunk.css.map": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/VanessaChuaPortfolio/static/js/64.56dc6704.chunk.js.map",
     "769.8d400373.chunk.css.map": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css.map",
@@ -35,6 +35,6 @@
   },
   "entrypoints": [
     "static/css/main.ab93e23d.css",
-    "static/js/main.ba2e9f19.js"
+    "static/js/main.6ada84ee.js"
   ]
 }
