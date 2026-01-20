@@ -8,7 +8,7 @@ const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
-  const [prof, setrepo] = useState([null]);
+  const [prof, setrepo] = useState(null);
   function setProfileFunction(array) {
     setrepo(array);
   }
@@ -16,7 +16,9 @@ export default function Profile() {
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
       const getProfileData = () => {
-        fetch("./profile.json")
+        fetch(
+          `${window.location.origin}${window.location.pathname}profile.json`
+        )
           .then(result => {
             if (!result.ok)
               throw new Error(`profile.json HTTP ${result.status}`);
