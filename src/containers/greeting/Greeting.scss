@@ -53,9 +53,32 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
+.greeting-image-div > img,
+.greeting-image-div > video {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 260px;
+  position: relative;
+  z-index: 2;
+}
+
+.greeting-gif {
+  display: block;
+  width: 90%;
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 16 / 9; // change to 16/9 if needed
+  object-fit: contain;
+  border-radius: 15px;
+  position: relative;
+  z-index: 3;
 }
 
 .wave-emoji {
@@ -120,21 +143,21 @@
   }
 }
 
-.greeting-image-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .greeting-image-div {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.greeting-gif {
-  //max-width: 520px;
-  width: 800px;
-  max-width: 100%;
-  height: auto;
-  image-rendering: auto;
-  image-rendering: -webkit-optimize-contrast;
-  border-radius: 15px;
-}
+// .greeting-gif {
+//   //max-width: 520px;
+//   width: 800px;
+//   max-width: 100%;
+//   height: auto;
+//   image-rendering: auto;
+//   image-rendering: -webkit-optimize-contrast;
+//   border-radius: 15px;
+// }
 
 @media (max-width: 320px) {
   .main {

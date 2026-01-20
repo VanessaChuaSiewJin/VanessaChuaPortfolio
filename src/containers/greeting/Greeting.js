@@ -69,15 +69,15 @@ export default function Greeting() {
             /> */}
             <video
               className="greeting-gif"
-              src={portfolioOverviewMp4}
               autoPlay
               loop
               muted
               playsInline
               preload="auto"
               disablePictureInPicture
-              controlsList={false}
-              style={{pointerEvents: "none"}} // prevents clicks from pausing in many cases
+              controls={false}
+              style={{pointerEvents: "none"}}
+              onPause={e => e.currentTarget.play()}
             >
               <source src={portfolioOverviewMp4} type="video/mp4" />
             </video>
