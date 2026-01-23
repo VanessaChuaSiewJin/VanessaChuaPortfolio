@@ -3,15 +3,18 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0 auto;
+  margin: 0px auto;
   margin-top: 4rem;
 }
-
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0 auto;
+  margin: 0px auto;
   margin-top: 2rem;
+}
+
+.greeting-main {
+  display: flex;
 }
 
 .subTitle {
@@ -20,11 +23,10 @@
 
 .greeting-main {
   display: flex;
-  gap: 24px; // nicer spacing between text and media
 }
 
 .greeting-main > * {
-  flex: 1 1 0;
+  flex: 1;
   margin-bottom: 30px;
 }
 
@@ -34,10 +36,8 @@
 
 .button-greeting-div {
   display: flex;
-  gap: 12px;
   margin-top: 40px;
 }
-
 .download-link-button {
   text-decoration: none;
 }
@@ -53,45 +53,9 @@
   line-height: 40px;
 }
 
-/* Media container */
-.greeting-image-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* prevent “collapsed right column” issues in flex layouts */
-  flex: 0 0 clamp(420px, 40vw, 720px);
-  min-height: 260px;
-
-  position: relative;
-  z-index: 2;
-}
-
-/* Make both <img> and <video> behave consistently */
-.greeting-image-div > img,
-.greeting-image-div > video {
-  display: block;
-  width: 100%;
+.greeting-image-div > img {
+  max-width: 100%;
   height: auto;
-}
-
-/* Video styling */
-.greeting-gif {
-  width: 100%;
-  max-width: clamp(420px, 40vw, 720px);
-
-  /* lock visual box so it always paints */
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-
-  border-radius: 15px;
-  position: relative;
-  z-index: 3;
-
-  /* help video paint correctly under animations/transforms */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: transform;
 }
 
 .wave-emoji {
@@ -134,41 +98,42 @@
   .greeting-text-p {
     font-size: 20px;
   }
-  .greeting-image-div {
-    flex-basis: 420px;
-  }
 }
-
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
   }
-
   .greeting-text {
     font-size: 30px;
     text-align: center;
   }
-
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-
   .greeting-main {
     display: block;
   }
-
   .greeting-image-div {
-    flex: none;
-    min-height: 0;
-    height: auto;
-    margin-top: 12px;
+    height: 256px;
   }
+}
 
-  .greeting-gif {
-    max-width: 100%;
-  }
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-gif {
+  //max-width: 520px;
+  width: 800px;
+  max-width: 100%;
+  height: auto;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+  border-radius: 15px;
 }
 
 @media (max-width: 320px) {
