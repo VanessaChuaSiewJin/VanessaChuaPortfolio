@@ -59,21 +59,24 @@ export default function Greeting() {
 
         <div className="greeting-image-wrap">
           <div className="greeting-video-wrap">
-          <video
-            className="greeting-gif"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            disablePictureInPicture
-            controls={false}
-            style={{ pointerEvents: "none" }}
-            onPause={(e) => e.currentTarget.play()}
-          >
-            <source src={`${process.env.PUBLIC_URL}/videos/ProjOverview_web.mp4`} type="video/mp4" />
-          </video>
-        </div>
+            <video
+              className="greeting-gif"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              disablePictureInPicture
+              controls={false}
+              style={{pointerEvents: "none"}}
+              onPause={e => e.currentTarget.play()}
+            >
+              <source
+                src={`${process.env.PUBLIC_URL}/videos/ProjOverview_web.mp4`}
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
       </div>
     </div>
