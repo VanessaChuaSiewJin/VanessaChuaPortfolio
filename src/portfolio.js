@@ -59,8 +59,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle:
-    "Game and interactive developer driven by curiosity, experimentation, and a love for games.",
+  subTitle: "",
   skills: [
     emoji("◆ Develop interactive and game projects using Unity and PlayCanvas"),
     emoji(
@@ -70,9 +69,6 @@ const skillsSection = {
       "◆ Prototype and iterate on interactive systems by translating Figma designs into Unity implementations and refining through playtesting"
     )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -102,13 +98,13 @@ https://fontawesome.com/icons?d=gallery */
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationSection = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName:
@@ -142,11 +138,11 @@ const educationSection = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Gameplay & Interaction Systems", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
+      Stack: "Gameplay & Interaction Systems",
+      progressPercentage: "70%"
     },
     {
       Stack: "Game Engines & Tooling",
@@ -157,7 +153,7 @@ const techStack = {
       progressPercentage: "55%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
@@ -183,7 +179,7 @@ const workExperiences = {
     {
       role: "Game Design Intern",
       company: "Stepping Stone Studio LLP",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/game_control.png"),
       date: "Jul 2021 - Nov 2021",
       desc: "Supported the development of a 2D mobile game by contributing to level design, gameplay iteration, and pixel art asset creation in Unity.",
       descBullets: [
@@ -204,12 +200,9 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
 const openSource = {
   showGithubProfile: false, // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -269,91 +262,78 @@ const bigProjects = {
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://youtu.be/vzexESdUBdo?si=r9wKfE-LXy05UmAT"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Purrfect Putt!!",
           videoEmbed:
             "https://www.youtube.com/embed/SZhhRPjjCzA?si=PADhZSFAo1OqDAw1",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=SZhhRPjjCzA"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "KoKopalms Adventure",
           videoEmbed:
             "https://www.youtube.com/embed/4aNe6FhXW7Y?si=ffIUMb7R9TeaIEaC",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=4aNe6FhXW7Y"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Deflect",
           videoEmbed:
             "https://www.youtube.com/embed/6ftVcL10mJ8?si=5d2gvL0QrmuGW8Xd",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=6ftVcL10mJ8"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Reliving The Dead",
           videoEmbed:
             "https://www.youtube.com/embed/hd4BJYaZigs?si=BSa08D68KSurWLR6",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=hd4BJYaZigs"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Kill & Survive",
           videoEmbed:
             "https://www.youtube.com/embed/f9s8Ke8DOqY?si=hCxldACd0ZpPy2IM",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=f9s8Ke8DOqY"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Mobile Computing Project",
           videoEmbed:
             "https://www.youtube.com/embed/1wRyfeFr7vI?si=EVQb4ybGhwqNFDdI",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=1wRyfeFr7vI"
             }
@@ -365,68 +345,48 @@ const bigProjects = {
       sectionTitle: "Temasek Polytechnic Projects",
       projects: [
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "The Mini Escape",
           videoEmbed:
             "https://www.youtube.com/embed/53BLoKajY08?si=KgRkTpGKkdJB7aHd",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=53BLoKajY08"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Crimson Song Adventure Gameplay",
           videoEmbed:
             "https://www.youtube.com/embed/bz4Hd1zBYNU?si=pg4VThfcYCWgKjvx",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://youtu.be/bz4Hd1zBYNU?si=_a5gWzSBZNnIklvI"
             }
           ]
         },
         {
-          //image: require("./assets/images/nextuLogo.webp"),
           projectName: "Ceendi vs The Sea Pollutants",
           videoEmbed:
             "https://www.youtube.com/embed/L47-fkvqpYo?si=PrF-oaKHN4ZIb8lJ",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://youtu.be/L47-fkvqpYo?si=_dGo2W31bGySqkJp"
             }
           ]
         },
-        // {
-        //   //image: require("./assets/images/nextuLogo.webp"),
-        //   projectName: "Sugar Control",
-        //   projectDesc: "",
-        //   footerLink: [
-        //     {
-        //       //PUT VIDEO
-        //       name: "",
-        //       url: ""
-        //     }
-        //   ]
-        // },
         {
-          image: require("./assets/images/nextuLogo.webp"),
           projectName: "Donutty Catch",
           videoEmbed:
             "https://www.youtube.com/embed/M1O-GwAE6wM?si=G2u2U59qbVSrWlXs",
           projectDesc: "",
           footerLink: [
             {
-              //PUT VIDEO
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=M1O-GwAE6wM"
             }
@@ -553,13 +513,6 @@ const contactInfo = {
   email_address: "vanessa.chuasiewjin.2000@gmail.com"
 };
 
-// Twitter Section
-
-// const twitterDetails = {
-//   userName: "twitter", //Replace "twitter" with your twitter username without @
-//   display: true // Set true to display this section, defaults to false
-// };
-
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
@@ -575,7 +528,6 @@ export {
   bigProjects,
   achievementSection,
   contactInfo,
-  //twitterDetails,
   isHireable,
   resumeSection
 };

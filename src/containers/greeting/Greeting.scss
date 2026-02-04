@@ -1,33 +1,41 @@
 @import "../../_globalColor";
 
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* ─────────────────────────────────────────────
+   Main Layout
+───────────────────────────────────────────── */
 .main {
   width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
+  padding: 32px 10px 0;
+  margin: 0 auto;
 }
+
 .greet-main {
   width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  padding: 32px 10px 0;
+  margin: 0 auto;
 }
 
+/* ─────────────────────────────────────────────
+   Greeting Section
+───────────────────────────────────────────── */
 .greeting-main {
   display: flex;
-}
-
-.subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
+  gap: 40px;
 }
 
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
+}
+
+.subTitle {
+  color: $subTitle !important;
 }
 
 .empty-div {
@@ -37,11 +45,16 @@
 .button-greeting-div {
   display: flex;
   margin-top: 40px;
+  gap: 16px;
 }
+
 .download-link-button {
   text-decoration: none;
 }
 
+/* ─────────────────────────────────────────────
+   Text
+───────────────────────────────────────────── */
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
@@ -53,11 +66,26 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+/* ─────────────────────────────────────────────
+   Image / Video
+───────────────────────────────────────────── */
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; // prevents bleed
 }
 
+.greeting-gif {
+  width: 100%;
+  max-width: 720px; // prevents pushing header
+  height: auto;
+  border-radius: 15px;
+}
+
+/* ─────────────────────────────────────────────
+   Emoji
+───────────────────────────────────────────── */
 .wave-emoji {
   animation-duration: 1.8s;
   animation-iteration-count: infinite;
@@ -90,7 +118,9 @@
   }
 }
 
-/* Media Query */
+/* ─────────────────────────────────────────────
+   Responsive
+───────────────────────────────────────────── */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
@@ -99,45 +129,40 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .main {
+    padding-top: 72px;
   }
+
+  .greeting-main {
+    display: block;
+  }
+
+  .button-greeting-div {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .greeting-text {
     font-size: 30px;
     text-align: center;
   }
+
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
-    display: block;
-  }
+
   .greeting-image-div {
-    height: 256px;
+    height: auto;
+    margin-top: 20px;
   }
-}
-
-.greeting-image-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.greeting-gif {
-  //max-width: 520px;
-  width: 800px;
-  max-width: 100%;
-  height: auto;
-  image-rendering: auto;
-  image-rendering: -webkit-optimize-contrast;
-  border-radius: 15px;
 }
 
 @media (max-width: 320px) {
   .main {
-    width: auto;
+    width: 100%;
   }
 }

@@ -3,91 +3,69 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+
 import {
   greeting,
   workExperiences,
   skillsSection,
-  educationSection,
-  // openSource,
-  // blogSection,
   achievementSection,
   resumeSection
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
-  const viewExperience = workExperiences.display;
-  // const viewOpenSource = openSource.display;
-  const viewSkills = skillsSection.display;
-  const viewEducation = educationSection.display;
-  const viewAchievement = achievementSection.display;
-  // const viewBlog = blogSection.display;
-  const viewResume = resumeSection.display;
 
   return (
     <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
+      <header className={isDark ? "header dark-menu" : "header"}>
+        {/* Logo */}
         <a href="/" className="logo">
-          {/* <span className="grey-color"> &lt;</span> */}
           <span className="logo-name">{greeting.username}</span>
-          {/* <span className="grey-color">/&gt;</span> */}
         </a>
+
+        {/* Mobile toggle */}
         <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{color: "white"}}
-        >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className={isDark ? "navicon navicon-dark" : "navicon"} />
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+
+        {/* Menu */}
+        <ul className={isDark ? "menu dark-menu" : "menu"}>
+          {skillsSection.display && (
             <li>
               <a href="#skills">Skills</a>
             </li>
           )}
-          {viewEducation && (
-            <li>
-              <a href="#education">Education</a>
-            </li>
-          )}
-          {viewExperience && (
+
+          {workExperiences.display && (
             <li>
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {/* {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
-            </li>
-          )} */}
-          {viewAchievement && (
+
+          {achievementSection.display && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {/* {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )} */}
-          {viewResume && (
+
+          {resumeSection.display && (
             <li>
               <a href="#resume">Resume</a>
             </li>
           )}
+
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+
+          <li className="toggle-item">
+            <ToggleSwitch />
           </li>
         </ul>
       </header>
     </Headroom>
   );
 }
+
 export default Header;
