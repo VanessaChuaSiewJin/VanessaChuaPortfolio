@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VanessaChuaPortfolio/static/css/main.7169611c.css",
-    "main.js": "/VanessaChuaPortfolio/static/js/main.7eb0c9cd.js",
+    "main.js": "/VanessaChuaPortfolio/static/js/main.bf8b0dae.js",
     "static/css/64.499264d4.chunk.css": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css",
     "static/js/64.98920275.chunk.js": "/VanessaChuaPortfolio/static/js/64.98920275.chunk.js",
     "static/css/769.8d400373.chunk.css": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css",
@@ -9,6 +9,7 @@
     "static/media/Montserrat-Regular.ttf": "/VanessaChuaPortfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/VanessaChuaPortfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/MuseumOfLights.png": "/VanessaChuaPortfolio/static/media/MuseumOfLights.023de6b064885829d670.png",
+    "static/media/resume.pdf": "/VanessaChuaPortfolio/static/media/resume.cc4f42001d1a73329eee.pdf",
     "static/media/game_control.png": "/VanessaChuaPortfolio/static/media/game_control.9175352345ac50e3e9f9.png",
     "static/media/CraveFX_Logo.png": "/VanessaChuaPortfolio/static/media/CraveFX_Logo.26e45bbbc3c2623d3d98.png",
     "static/media/ScrapCollector.png": "/VanessaChuaPortfolio/static/media/ScrapCollector.c69f8c8070625b5a7bc8.png",
@@ -17,7 +18,6 @@
     "static/media/Temasek Polytechnic_Logo.svg": "/VanessaChuaPortfolio/static/media/Temasek Polytechnic_Logo.c68076c01a63f0dcd499c6ed80b01acc.svg",
     "static/media/skill.svg": "/VanessaChuaPortfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/star_icon2.svg": "/VanessaChuaPortfolio/static/media/star_icon2.68cf1fe261ab49f994d5ebf78e3f7cbc.svg",
-    "static/media/resume.pdf": "/VanessaChuaPortfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
     "static/media/csharp_icon.svg": "/VanessaChuaPortfolio/static/media/csharp_icon.57593a38fc7daa0a4a7f5f2be80ee7e1.svg",
     "static/media/nextuLogo.webp": "/VanessaChuaPortfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/VanessaChuaPortfolio/index.html",
@@ -26,7 +26,7 @@
     "static/media/adobexd_icon.svg": "/VanessaChuaPortfolio/static/media/adobexd_icon.3292fd24c94d2bc95dbefa595a704447.svg",
     "static/media/playcanvas_icon.svg": "/VanessaChuaPortfolio/static/media/playcanvas_icon.e7f267e6c2ed52eec4d0f1d3d3be2d99.svg",
     "main.7169611c.css.map": "/VanessaChuaPortfolio/static/css/main.7169611c.css.map",
-    "main.7eb0c9cd.js.map": "/VanessaChuaPortfolio/static/js/main.7eb0c9cd.js.map",
+    "main.bf8b0dae.js.map": "/VanessaChuaPortfolio/static/js/main.bf8b0dae.js.map",
     "64.499264d4.chunk.css.map": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css.map",
     "64.98920275.chunk.js.map": "/VanessaChuaPortfolio/static/js/64.98920275.chunk.js.map",
     "769.8d400373.chunk.css.map": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css.map",
@@ -34,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.7169611c.css",
-    "static/js/main.7eb0c9cd.js"
+    "static/js/main.bf8b0dae.js"
   ]
 }
