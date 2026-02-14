@@ -6,36 +6,67 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 /* ─────────────────────────────────────────────
-   Main Layout
+   Container (Ultra-Wide Safe)
 ───────────────────────────────────────────── */
 .main {
-  width: 90%;
-  padding: 32px 10px 0;
+  width: 100%;
+  max-width: 2500px;
   margin: 0 auto;
+  padding: 32px 20px 0;
 }
 
 .greet-main {
-  width: 90%;
-  padding: 32px 10px 0;
+  width: 100%;
+  max-width: 2000px;
   margin: 0 auto;
+  padding: 32px 20px 0;
 }
 
 /* ─────────────────────────────────────────────
-   Greeting Section
+   Greeting Layout
 ───────────────────────────────────────────── */
 .greeting-main {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 60px;
 }
 
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+/* Left Side (Text) */
+.greeting-text-div {
+  flex: 1 1 55%;
 }
 
+/* Right Side (Video) */
+.greeting-image-wrap {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.greeting-video-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ─────────────────────────────────────────────
+   Text
+───────────────────────────────────────────── */
 .subTitle {
   color: $subTitle !important;
+}
+
+.greeting-text {
+  font-size: 70px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .empty-div {
@@ -53,38 +84,17 @@ body {
 }
 
 /* ─────────────────────────────────────────────
-   Text
+   Video Styling
 ───────────────────────────────────────────── */
-.greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
-}
-
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
-}
-
-/* ─────────────────────────────────────────────
-   Image / Video
-───────────────────────────────────────────── */
-.greeting-image-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; // prevents bleed
-}
-
 .greeting-gif {
   width: 100%;
-  max-width: 720px; // prevents pushing header
+  max-width: 800px;
   height: auto;
   border-radius: 15px;
 }
 
 /* ─────────────────────────────────────────────
-   Emoji
+   Emoji Animation
 ───────────────────────────────────────────── */
 .wave-emoji {
   animation-duration: 1.8s;
@@ -125,18 +135,21 @@ body {
   .greeting-text {
     font-size: 50px;
   }
+
   .greeting-text-p {
     font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .main {
-    padding-top: 72px;
+  .greeting-main {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .greeting-main {
-    display: block;
+  .greeting-image-wrap {
+    justify-content: center;
+    margin-top: 30px;
   }
 
   .button-greeting-div {
@@ -146,18 +159,11 @@ body {
 
   .greeting-text {
     font-size: 30px;
-    text-align: center;
   }
 
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
-    text-align: center;
-  }
-
-  .greeting-image-div {
-    height: auto;
-    margin-top: 20px;
   }
 }
 
