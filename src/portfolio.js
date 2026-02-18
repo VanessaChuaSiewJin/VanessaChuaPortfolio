@@ -166,14 +166,12 @@ const workExperiences = {
       company: "CraveFX",
       companylogo: require("./assets/images/CraveFX_Logo.png"),
       date: "May 2025 - Present",
-      desc: "Developed interactive systems for large-scale exhibitions and installations using Unity, focusing on real-time interaction, UI logic, and gameplay-style mechanics in collaborative production environments.",
+      desc: "Developed interactive Unity systems for large-scale exhibitions and installations.",
       descBullets: [
-        "Worked on SG60 Heart & Soul Exhibition, Heineken Connected Bars, T5 In The Making Exhibition",
-        "Developed interactive features and real time systems in Unity (C#) for exhibition installations",
-        "Implemented UI interactions, state-driven flows, and input handling for touch-based experiences",
-        "Collaborated closely with designers, producers, and artists to translate concepts and Figma designs into working prototypes",
-        "Debugged and optimized interaction logic to ensure stable performance in public-facing installations",
-        "Adapting quickly to changing requirements and timelines"
+        "Built real-time interactive systems in Unity (C#)",
+        "Implemented UI flows and touch-based input handling",
+        "Translated Figma concepts into production-ready prototypes",
+        "Optimized interaction logic for stable public deployment"
       ]
     },
     {
@@ -181,13 +179,12 @@ const workExperiences = {
       company: "Stepping Stone Studio LLP",
       companylogo: require("./assets/images/game_control.png"),
       date: "Jul 2021 - Nov 2021",
-      desc: "Supported the development of a 2D mobile game by contributing to level design, gameplay iteration, and pixel art asset creation in Unity.",
+      desc: "Contributed to the development of a 2D mobile game in Unity.",
       descBullets: [
-        "Worked on Crimson Song Adventure",
-        "Designed and iterated on 2D levels using Unity Tilemap, focusing on pacing, difficulty balance, and player flow",
-        "Created 2D environmental pixel art assets and tilesets using Piskel",
-        "Rigged and animated 2D sprites using Unity Animator for in-game characters",
-        "Playtested levels regularly and refined layouts based on gameplay feedback"
+        "Designed and iterated 2D levels using Unity Tilemap",
+        "Created pixel art assets and tilesets in Piskel",
+        "Animated 2D characters using Unity Animator",
+        "Refined gameplay through playtesting and iteration"
       ]
     }
     // {
@@ -218,7 +215,13 @@ const bigProjects = {
         {
           //image: require("./assets/images/saayaHealthLogo.webp"),
           projectName: "SG60 Heart & Soul Exhibition",
-          projectDesc: "Worked on Arrival Feature Wall & Home Is A Feeling",
+          projectDesc: [
+            "Interactive Developer (Unity)",
+            "Built modular ScriptableObject system for dynamic visual generation",
+            "Implemented JSON pipeline for cross-application design reconstruction"
+          ],
+          videoEmbed:
+            "https://drive.google.com/file/d/1jW5gHHAXq0t45XKLLr1vZIBl8F6axWcC/preview",
           footerLink: [
             {
               name: "Visit Website",
@@ -226,21 +229,28 @@ const bigProjects = {
             }
           ]
         },
-        {
-          //image: require("./assets/images/nextuLogo.webp"),
-          projectName: "Heineken Connected Bar",
-          projectDesc: "Interactive web for Heineken",
-          footerLink: [
-            {
-              name: "Visit Website"
-              //url: "http://nextu.se/"
-            }
-          ]
-        },
+        // {
+        //   //image: require("./assets/images/nextuLogo.webp"),
+        //   projectName: "Heineken Connected Bar",
+        //   projectDesc: "Interactive web for Heineken",
+        //   footerLink: [
+        //     {
+        //       name: "Visit Website"
+        //       //url: "http://nextu.se/"
+        //     }
+        //   ]
+        // },
         {
           //image: require("./assets/images/nextuLogo.webp"),
           projectName: "T5 In The Making Exhibition",
-          projectDesc: "Worked on kiosk interactivity",
+          projectDesc: [
+            "Interactive Developer (Unity)",
+            "Built permutation-driven design database (56 keyword combinations)",
+            "Implemented designer-defined user workflow from Figma to production",
+            "Integrated QR code generation with backend API"
+          ],
+          videoEmbed:
+            "https://drive.google.com/file/d/1XwDOMjhJ4ymsiEjRYACLl7WgszoLZTox/preview",
           footerLink: [
             {
               name: "Visit Website",
@@ -259,7 +269,13 @@ const bigProjects = {
           projectName: "Keep It Brief",
           videoEmbed:
             "https://www.youtube.com/embed/vzexESdUBdo?si=1quqgs-95J-v1ejV",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 13",
+            "Integrated FMOD into custom engine",
+            "Built 3D audio system (Source, Listener, Zones)",
+            "Implemented event-driven gameplay audio",
+            "Prototyped level selection flow"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -271,7 +287,13 @@ const bigProjects = {
           projectName: "Purrfect Putt!!",
           videoEmbed:
             "https://www.youtube.com/embed/SZhhRPjjCzA?si=PADhZSFAo1OqDAw1",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 7",
+            "Implemented AI using custom state machine",
+            "Designed enemy logic (Chaser, Mage, Charger)",
+            "Developed custom math library (C++)",
+            "Built gameplay prototype in Unity 2D"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -283,7 +305,13 @@ const bigProjects = {
           projectName: "KoKopalms Adventure",
           videoEmbed:
             "https://www.youtube.com/embed/4aNe6FhXW7Y?si=ffIUMb7R9TeaIEaC",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 5",
+            "Built custom in-game audio system",
+            "Implemented dynamic audio loading & playback",
+            "Managed sound lifecycle & grouping",
+            "Designed interactive tutorial UI"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -295,7 +323,11 @@ const bigProjects = {
           projectName: "Deflect",
           videoEmbed:
             "https://www.youtube.com/embed/6ftVcL10mJ8?si=5d2gvL0QrmuGW8Xd",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 5",
+            "Creating enemy AI Behaviour",
+            "Playtesting"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -307,7 +339,7 @@ const bigProjects = {
           projectName: "Reliving The Dead",
           videoEmbed:
             "https://www.youtube.com/embed/hd4BJYaZigs?si=BSa08D68KSurWLR6",
-          projectDesc: "",
+          projectDesc: ["Solo"],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -319,26 +351,26 @@ const bigProjects = {
           projectName: "Kill & Survive",
           videoEmbed:
             "https://www.youtube.com/embed/f9s8Ke8DOqY?si=hCxldACd0ZpPy2IM",
-          projectDesc: "",
+          projectDesc: ["Solo"],
           footerLink: [
             {
               name: "Watch on YouTube",
               url: "https://www.youtube.com/watch?v=f9s8Ke8DOqY"
             }
           ]
-        },
-        {
-          projectName: "Mobile Computing Project",
-          videoEmbed:
-            "https://www.youtube.com/embed/1wRyfeFr7vI?si=EVQb4ybGhwqNFDdI",
-          projectDesc: "",
-          footerLink: [
-            {
-              name: "Watch on YouTube",
-              url: "https://www.youtube.com/watch?v=1wRyfeFr7vI"
-            }
-          ]
         }
+        // {
+        //   projectName: "Mobile Computing Project",
+        //   videoEmbed:
+        //     "https://www.youtube.com/embed/1wRyfeFr7vI?si=EVQb4ybGhwqNFDdI",
+        //   projectDesc: "",
+        //   footerLink: [
+        //     {
+        //       name: "Watch on YouTube",
+        //       url: "https://www.youtube.com/watch?v=1wRyfeFr7vI"
+        //     }
+        //   ]
+        // }
       ]
     },
     {
@@ -348,7 +380,12 @@ const bigProjects = {
           projectName: "The Mini Escape",
           videoEmbed:
             "https://www.youtube.com/embed/53BLoKajY08?si=KgRkTpGKkdJB7aHd",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 4",
+            "Level design (Total created 10 levels)",
+            "2D sprite drawing",
+            "Tile mapping"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -360,7 +397,12 @@ const bigProjects = {
           projectName: "Crimson Song Adventure Gameplay",
           videoEmbed:
             "https://www.youtube.com/embed/bz4Hd1zBYNU?si=pg4VThfcYCWgKjvx",
-          projectDesc: "",
+          projectDesc: [
+            "Team of 4",
+            "Level design (Total created 10 levels)",
+            "2D sprite drawing",
+            "Tile mapping"
+          ],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -372,7 +414,7 @@ const bigProjects = {
           projectName: "Ceendi vs The Sea Pollutants",
           videoEmbed:
             "https://www.youtube.com/embed/L47-fkvqpYo?si=PrF-oaKHN4ZIb8lJ",
-          projectDesc: "",
+          projectDesc: ["Team of 5", "Health system", "Timed tutorial"],
           footerLink: [
             {
               name: "Watch on YouTube",
@@ -384,7 +426,7 @@ const bigProjects = {
           projectName: "Donutty Catch",
           videoEmbed:
             "https://www.youtube.com/embed/M1O-GwAE6wM?si=G2u2U59qbVSrWlXs",
-          projectDesc: "",
+          projectDesc: ["Solo", "Score system", "Level system", "Main menu"],
           footerLink: [
             {
               name: "Watch on YouTube",

@@ -74,7 +74,7 @@
 /* ---------------- TEXT ---------------- */
 
 .project-detail {
-  text-align: center;
+  text-align: left;
 }
 
 .card-title {
@@ -88,6 +88,11 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+}
+
+.card-subtitle li {
+  margin-bottom: 2px;
+  line-height: 1.4;
 }
 
 .dark-mode.card-title {

@@ -17,6 +17,16 @@
   margin-top: 2rem;
 }
 
+.experience-container ul {
+  margin-top: 1rem;
+  padding-left: 20px; // controls indent
+}
+
+.experience-container li {
+  margin-bottom: 10px; // controls spacing between bullets
+  line-height: 1.6; // improves readability
+}
+
 .experience-container > * {
   flex: 1;
 }
