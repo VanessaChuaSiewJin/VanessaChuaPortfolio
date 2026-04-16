@@ -1,15 +1,14 @@
 {
   "files": {
     "main.css": "/VanessaChuaPortfolio/static/css/main.56a44311.css",
-    "main.js": "/VanessaChuaPortfolio/static/js/main.dfa6fca1.js",
+    "main.js": "/VanessaChuaPortfolio/static/js/main.03373af2.js",
     "static/css/64.499264d4.chunk.css": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css",
-    "static/js/64.98920275.chunk.js": "/VanessaChuaPortfolio/static/js/64.98920275.chunk.js",
+    "static/js/64.a5d08231.chunk.js": "/VanessaChuaPortfolio/static/js/64.a5d08231.chunk.js",
     "static/css/769.8d400373.chunk.css": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css",
-    "static/js/769.a7e3cdf8.chunk.js": "/VanessaChuaPortfolio/static/js/769.a7e3cdf8.chunk.js",
+    "static/js/769.e756597d.chunk.js": "/VanessaChuaPortfolio/static/js/769.e756597d.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/VanessaChuaPortfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/VanessaChuaPortfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/MuseumOfLights.png": "/VanessaChuaPortfolio/static/media/MuseumOfLights.023de6b064885829d670.png",
-    "static/media/Vanessa_Chua_Resume.pdf": "/VanessaChuaPortfolio/static/media/Vanessa_Chua_Resume.cc4f42001d1a73329eee.pdf",
     "static/media/game_control.png": "/VanessaChuaPortfolio/static/media/game_control.9175352345ac50e3e9f9.png",
     "static/media/CraveFX_Logo.png": "/VanessaChuaPortfolio/static/media/CraveFX_Logo.26e45bbbc3c2623d3d98.png",
     "static/media/ScrapCollector.png": "/VanessaChuaPortfolio/static/media/ScrapCollector.c69f8c8070625b5a7bc8.png",
@@ -26,14 +25,14 @@
     "static/media/adobexd_icon.svg": "/VanessaChuaPortfolio/static/media/adobexd_icon.3292fd24c94d2bc95dbefa595a704447.svg",
     "static/media/playcanvas_icon.svg": "/VanessaChuaPortfolio/static/media/playcanvas_icon.e7f267e6c2ed52eec4d0f1d3d3be2d99.svg",
     "main.56a44311.css.map": "/VanessaChuaPortfolio/static/css/main.56a44311.css.map",
-    "main.dfa6fca1.js.map": "/VanessaChuaPortfolio/static/js/main.dfa6fca1.js.map",
+    "main.03373af2.js.map": "/VanessaChuaPortfolio/static/js/main.03373af2.js.map",
     "64.499264d4.chunk.css.map": "/VanessaChuaPortfolio/static/css/64.499264d4.chunk.css.map",
-    "64.98920275.chunk.js.map": "/VanessaChuaPortfolio/static/js/64.98920275.chunk.js.map",
+    "64.a5d08231.chunk.js.map": "/VanessaChuaPortfolio/static/js/64.a5d08231.chunk.js.map",
     "769.8d400373.chunk.css.map": "/VanessaChuaPortfolio/static/css/769.8d400373.chunk.css.map",
-    "769.a7e3cdf8.chunk.js.map": "/VanessaChuaPortfolio/static/js/769.a7e3cdf8.chunk.js.map"
+    "769.e756597d.chunk.js.map": "/VanessaChuaPortfolio/static/js/769.e756597d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56a44311.css",
-    "static/js/main.dfa6fca1.js"
+    "static/js/main.03373af2.js"
   ]
 }
