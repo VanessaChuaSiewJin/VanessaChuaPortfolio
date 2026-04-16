@@ -40,7 +40,7 @@ const greeting = {
     "I am a game and interactive developer who enjoys learning and exploring new ideas. I work primarily with Unity, using C# and C++ to build engaging interactive experiences and real-time systems."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1rOd2hFvE01KEHC5idt6B7ZcFV2Y1I9C3/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1wOvp-sBhi5Pr7btJDG2ys7Jiz5p7nq7Q/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -480,59 +480,65 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "COVID-19 Resilience Medal",
+      subtitle: "2023",
+      icon: StarIcon
+      //iconAlt: "Edusave Merit Bursary"
+    },
+    {
       title: "Edusave Merit Bursary",
       subtitle: "2020",
-      icon: StarIcon,
-      iconAlt: "Edusave Merit Bursary"
+      icon: StarIcon
+      //iconAlt: "Edusave Merit Bursary"
     },
     {
       title:
         "Edusave Award for Achievement, Good Leadership & Service (EAGLES)",
       subtitle: "2012, 2017",
-      icon: StarIcon,
-      iconAlt: "EAGLES Award"
+      icon: StarIcon
+      //iconAlt: "EAGLES Award"
     },
     {
       title: "Edusave Certificate of Academic Achievement",
       subtitle: "2015, 2016",
-      icon: StarIcon,
-      iconAlt: "Edusave Academic Achievement"
+      icon: StarIcon
+      //iconAlt: "Edusave Academic Achievement"
     },
     {
       title: "Edusave Character Award",
       subtitle: "2015",
-      icon: StarIcon,
-      iconAlt: "Edusave Character Award"
+      icon: StarIcon
+      //iconAlt: "Edusave Character Award"
     },
     {
       title: "R3lse Award Winner - Resilience",
       subtitle: "2015",
-      icon: StarIcon,
-      iconAlt: "R3lse Award"
+      icon: StarIcon
+      //iconAlt: "R3lse Award"
     },
     {
       title: "First in Computer Application (2T1)",
       subtitle: "2015",
-      icon: StarIcon,
-      iconAlt: "First in Computer Application"
+      icon: StarIcon
+      //iconAlt: "First in Computer Application"
     },
     {
       title: "First in Standard (2T1)",
       subtitle: "2015",
-      icon: StarIcon,
-      iconAlt: "First in Standard"
+      icon: StarIcon
+      //iconAlt: "First in Standard"
     },
     {
       title: "Model Learner Award",
       subtitle: "2015, 2018",
-      icon: StarIcon,
-      iconAlt: "Model Learner Award"
+      icon: StarIcon
+      //iconAlt: "Model Learner Award"
     },
     {
       title: "Edusave Scholarship",
       subtitle: "2013, 2014",
-      icon: StarIcon,
-      iconAlt: "Edusave Scholarship"
+      icon: StarIcon
+      //iconAlt: "Edusave Scholarship"
     }
   ],
   display: true
