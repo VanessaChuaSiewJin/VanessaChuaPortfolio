@@ -40,7 +40,7 @@ const greeting = {
     "I am a game and interactive developer who enjoys learning and exploring new ideas. I work primarily with Unity, using C# and C++ to build engaging interactive experiences and real-time systems."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1wOvp-sBhi5Pr7btJDG2ys7Jiz5p7nq7Q/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1740loW7huvTipBsQpxDYSzmjAdXinYB6/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
